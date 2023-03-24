@@ -15,8 +15,10 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     steps:
+    
       - uses: actions/checkout@v2
         with:
+        node-version: 16.0
           submodules: true
       - name: Build And Deploy
         id: builddeploy
